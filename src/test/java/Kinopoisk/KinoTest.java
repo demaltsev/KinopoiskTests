@@ -45,7 +45,7 @@ public class KinoTest extends BaseTest {
     }
 
     @Test
-    @Owner("Денис Мальцев")
+    @Owner("Denis Maltsev")
     @Description("Выполняется поиск фильма с заданными параметрами и проверяется что фильмы найдены")
     public void checkMovie(){
         MainSearchBarPage mainSearchBarPage = new MainSearchBarPage(driver);

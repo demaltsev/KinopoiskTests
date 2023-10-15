@@ -4,11 +4,14 @@ import Base.BaseSelenideTest;
 import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.Selenide;
 import org.junit.jupiter.api.Test;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 
 import static com.codeborne.selenide.Selenide.$$x;
 import static com.codeborne.selenide.Selenide.$x;
 
 public class KinoSelenideTest extends BaseSelenideTest {
+
     @Test
     public void checkFilms(){
         Selenide.open("https://www.kinopoisk.ru/s/");
