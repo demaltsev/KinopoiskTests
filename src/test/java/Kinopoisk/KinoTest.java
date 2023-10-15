@@ -4,9 +4,8 @@ package Kinopoisk;
 import Base.BaseTest;
 import Base.TestListener;
 import io.qameta.allure.Description;
-import io.qameta.allure.Epic;
+import io.qameta.allure.Flaky;
 import io.qameta.allure.Owner;
-import io.qameta.allure.Step;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -41,6 +40,7 @@ public class KinoTest extends BaseTest {
     }
 
     @Test
+    @Flaky
     @DisplayName("Проверка поиска нескольких фильмов")
     @Owner("Denis Maltsev")
     @Description("Выполняется поиск фильма и проверяется что фильмы найдены")

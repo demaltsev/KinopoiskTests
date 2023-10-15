@@ -23,6 +23,7 @@ public class MainSearchBarPage extends BasePage {
         return this;
     }
 
+
     public AdvancedSearchPage openSearchPage() {
         advancedSearchButton.click();
         return new AdvancedSearchPage(driver);
