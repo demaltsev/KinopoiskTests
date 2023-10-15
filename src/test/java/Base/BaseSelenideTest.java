@@ -12,6 +12,7 @@ public class BaseSelenideTest {
     @BeforeEach
     public void setUp(){
         WebDriverManager.chromedriver().setup();
+
         Configuration.browser="chrome";
         Configuration.browserSize="1920x1080";
         Configuration.timeout=40;

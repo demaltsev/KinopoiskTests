@@ -19,8 +19,11 @@ public class BaseTest {
     public void setUp() {
         System.setProperty("webdriver.chrome.driver", "\\Users\\Deni\\IdeaProjects\\KinopoiskTests\\src\\main\\resources\\chromedriver.exe");
         ChromeOptions chromeOptions = new ChromeOptions();
+        chromeOptions.addArguments("--user-data-dir=C:\\Users\\Deni\\AppData\\Local\\Google\\Chrome\\User Data");
+        chromeOptions.addArguments("--profile-directory=Profile 1");
         chromeOptions.addArguments( "--remote-allow-origins=*");
-        //chromeOptions.addArguments("--headless");
+        chromeOptions.addArguments( "--headless");
+
         driver = new ChromeDriver(chromeOptions);
         driver.manage().timeouts().implicitlyWait(TIME_OUT, TimeUnit.SECONDS);
         driver.manage().timeouts().pageLoadTimeout(TIME_OUT, TimeUnit.SECONDS);
