@@ -1,2 +1,2 @@
 # KinopoiskTests
-Test`s to kinopoisk with Allure linked to Jenkinks.
+Test`s for kinopoisk with Allure.
